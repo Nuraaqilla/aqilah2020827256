@@ -1,0 +1,165 @@
+<a name="first_anchor"> </a>
+<html>
+<head>
+<link href="ASSEST/CSS/STYLE.css" rel="stylesheet">
+<title>MY HOMEPAGE</title>
+ <img src="ASSEST/IMAGE/headerpic.jpeg" alt="flower" style="width:100%;height:35%;">
+</head>
+
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1B5E20;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #DCEDC8;
+
+  padding: 16px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #000000;
+}
+</style>
+
+</head>
+<body>
+<ul>
+  <li><a class="active" href="HOMEPAGE.html">Home</a></li>
+  <li><a href="BIODATA.html">Biodata</a></li>
+  <li><a href="EXPERIENCE.html">Experience</a></li>
+  <li><a href="EDUCATION.html">Education</a></li>
+  <li><a href="FAMILY.html">Family</a></li>
+  <li><a href="GALLERY.html">Gallery</a></li>
+  <li><a href="MUSIC.html">Music</a></li>
+   <li><a href="AUTHOR.html">Author</a></li>
+</ul>
+
+<br><br>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content=
+        "width=device-width,
+        initial-scale=1.0" />
+ 
+    <title>Digital Clock</title>
+ 
+    <style>
+        #clock {
+            font-size: 100px;
+            width: 90%px;
+            margin: 20%px;
+            text-align: center;
+            border: 3px solid black;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+ 
+<body>
+    <div id="clock">8:10:45</div>
+ 
+    <script>
+        setInterval(showTime, 1000);
+        function showTime() {
+            let time = new Date();
+            let hour = time.getHours();
+            let min = time.getMinutes();
+            let sec = time.getSeconds();
+            am_pm = "AM";
+ 
+            if (hour > 12) {
+                hour -= 12;
+                am_pm = "PM";
+            }
+            if (hour == 0) {
+                hr = 12;
+                am_pm = "AM";
+            }
+ 
+            hour = hour < 10 ? "0" + hour : hour;
+            min = min < 10 ? "0" + min : min;
+            sec = sec < 10 ? "0" + sec : sec;
+ 
+            let currentTime = hour + ":"
+                + min + ":" + sec + am_pm;
+ 
+            document.getElementById("clock")
+                .innerHTML = currentTime;
+        }
+ 
+        showTime();
+    </script>
+</body>
+
+<br><br>
+<audio controls >
+  <source src="ASSEST/soundweek8.mp3" type="audio/mp3">
+</audio><br>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background-color: c5e1a5;
+  font-family: cambria;
+}
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #C5E1A5, 0 0 40px #C5E1A5, 0 0 50px #C5E1A5, 0 0 60px #C5E1A5, 0 0 70px #C5E1A5;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #C5E1A5, 0 0 40px #C5E1A5, 0 0 50px #C5E1A5, 0 0 60px #C5E1A5, 0 0 70px #C5E1A5, 0 0 80px #C5E1A5;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1 class="glow">NURAA QILLA</h1>
+     
+</body>
+</html>  
+
+<video width="100%" height="100%" autoplay muted loop>
+  	<source src="ASSEST/intro.mp4" type="video/mp4">
+</video>
+<br><br>
+
+<!-- Footer -->
+<footer class="">
+ <center
+ <br><a href="#first_anchor">Go To Top</a> <br>
+ 
+	<tr font face="cambria">
+	<a href="https://www.instagram.com/sweetiecupcakee/"><img src="ASSEST/IMAGE/instagramicon.png" alt="Sweetiecupcakee" width="100" height="100"></a>
+
+	<tr font face="cambria">
+	<a href="https://www.tiktok.com/@thesweetiecupcakee"><img src="ASSEST/IMAGE/tiktokicon.png" alt="Tiktok" width="100" height="100"></a>
+
+	<tr font face="cambria">
+	<a href="https://twitter.com/swtcpkee"><img src="ASSEST/IMAGE/twittericon.png" alt="Telegram" width="100" height="100"></a>
+
+</footer>
+</html>

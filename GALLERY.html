@@ -1,0 +1,264 @@
+<a name="first_anchor"> </a>
+<html>
+<head>
+<img src="ASSEST/IMAGE/headerpic.jpeg" alt="flower" style="width:100%;height:35%;">
+<title>MY GALLERY</title>
+<link href="ASSEST/CSS/STYLE.css" rel="stylesheet">
+
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1B5E20;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #DCEDC8;
+
+  padding: 16px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #000000;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="HOMEPAGE.html">Home</a></li>
+  <li><a href="BIODATA.html">Biodata</a></li>
+  <li><a href="EXPERIENCE.html">Experience</a></li>
+  <li><a href="EDUCATION.html">Education</a></li>
+  <li><a href="FAMILY.html">Family</a></li>
+  <li><a href="GALLERY.html">Gallery</a></li>
+  <li><a href="MUSIC.html">Music</a></li>
+   <li><a href="AUTHOR.html">Author</a></li>
+</ul>
+
+</body> 
+
+<html>
+<head>
+<title>My Gallery</title>
+</head>
+
+<style>
+body {
+  background-image: url('ASSEST/IMAGE/try2.gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+</style>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background-color: black;
+  font-family: cambria;
+}
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #C5E1A5, 0 0 40px #C5E1A5, 0 0 50px #C5E1A5, 0 0 60px #C5E1A5, 0 0 70px #C5E1A5;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #C5E1A5, 0 0 40px #C5E1A5, 0 0 50px #C5E1A5, 0 0 60px #C5E1A5, 0 0 70px #C5E1A5, 0 0 80px #C5E1A5;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1 class="glow">HELLO, GALLERY</h1>
+     
+</body>
+</html> 
+
+<body>
+<h1 style= "color:white;">Because every picture tells a story</h1>
+
+<h2 style= "color:#9CCC65;"> My favorite photos of...</h2>
+
+<h3 style= "font-size:20pt; color: white;">Food</h3>
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="ASSEST/IMAGE/food1.JPEG" width="1080" height="800">
+    <div class="text">RIBEYE STEAK</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="ASSEST/IMAGE/food2.JPEG" width="1080" height="800">
+    <div class="text">SIAKAP MASAK STEAM LIMAU</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="ASSEST/IMAGE/food3.JPEG" width="1080" height="800">
+    <div class="text">FRIED RICE WITH LAMB</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="ASSEST/IMAGE/food4.JPEG" width="1080" height="800">
+    <div class="text">SWEET POTATO BALLS</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>
+
+<br><br><br><br>
+
+<h3 style= "font-size:20pt; color: white;">Animals</h3>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.gallery {
+  margin: 5px;
+  border: 5px solid #ccc;
+  float: left;
+  width: 300px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  text-color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="gallery">
+  <a target="_blank" href="ASSEST/IMAGE/SNAKE.jpeg">
+    <img src="ASSEST/IMAGE/SNAKE.jpeg" alt="Cinque Terre" width="800" height="600">
+  </a>
+  <div class ="desc">SNAKE</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="ASSEST/IMAGE/BIRD.jpeg">
+    <img src="ASSEST/IMAGE/BIRD.jpeg" alt="Forest" width="800" height="600">
+  </a>
+  <div class="desc">EAGLE</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="ASSEST/IMAGE/FISH.jpeg">
+    <img src="ASSEST/IMAGE/FISH.jpeg" alt="Fish" width="800" height="600">
+  </a>
+  <div class="desc">FISH</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="ASSEST/IMAGE/MEERKAT.jpeg">
+    <img src="ASSEST/IMAGE/MEERKAT.jpeg" alt="Meerkat" width="800" height="600">
+  </a>
+  <div class="desc">MEERKAT</div>
+</div>
+</body>
+
+<body>
+
+<video width="70%" height="70%" controls autoplay muted loop>
+  	<source src="ASSEST/IMAGE/FISH.mov" type="video/mp4">
+  Your browser does not support the video tag.
+</video><br><br>
+
+<video width="70%" height="70%" controls autoplay muted loop>
+  	<source src="ASSEST/IMAGE/LABULABI.mov" type="video/mp4">
+</video>
+
+</body>
+
+<br><br><h3 style= "font-size:20pt; color: white;"> Videos of Farm in City</h3><br>
+
+<br><br>
+
+<!-- Footer -->
+<footer class="">
+ <center
+ <br><a href="#first_anchor">Go To Top</a> <br>
+ 
+	<tr font face="cambria">
+	<a href="https://www.instagram.com/sweetiecupcakee/"><img src="ASSEST/IMAGE/instagramicon.png" alt="Sweetiecupcakee" width="100" height="100"></a>
+
+	<tr font face="cambria">
+	<a href="https://www.tiktok.com/@thesweetiecupcakee"><img src="ASSEST/IMAGE/tiktokicon.png" alt="Tiktok" width="100" height="100"></a>
+
+	<tr font face="cambria">
+	<a href="https://twitter.com/swtcpkee"><img src="ASSEST/IMAGE/twittericon.png" alt="Telegram" width="100" height="100"></a>
+
+</footer>
